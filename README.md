@@ -10,6 +10,8 @@ The Cancer Study Repository is a comprehensive collection of resources, datasets
 5. **Log2Fold Change:** This column typically represents the log2-fold change in gene expression between tumor and normal samples. It's a measure of how much the expression of a gene changes between the two conditions.
 6. **adjp:** This column likely contains adjusted p-values associated with each gene, often used in statistical analyses to determine if the observed differences in gene expression are statistically significant after adjusting for multiple testing.
 
+
+## Key Features
 1. `Datasets:` The repository hosts a diverse range of high-quality datasets sourced from reputable sources, including genomic data, clinical data, imaging data, and more. These datasets cover various cancer types, stages, and demographics, providing valuable resources for analysis and modeling.
 
 2. `Analysis Tools:` A curated selection of analysis tools, scripts, and algorithms tailored for cancer research is included in the repository. These tools assist researchers in processing, analyzing, and interpreting complex datasets, enabling them to uncover patterns, biomarkers, and potential therapeutic targets.
