@@ -2,7 +2,7 @@
 
 The Cancer Study Repository is a comprehensive collection of resources, datasets, code, and documentation aimed at facilitating research and analysis in the field of cancer biology and oncology. This repository serves as a centralized hub for researchers, clinicians, and data scientists to collaborate, share insights, and advance our understanding of cancer.
 
-## Important Concepts 
+## Important Concepts for GEPIA2 Data 
 1. **Gene Symbol:** This column contains symbols representing genes, typically short identifiers used to represent genes in various databases and analyses.
 2. **GeneID:** This column contains the unique identifiers associated with genes. In this dataset, it appears to be using Ensembl gene IDs, which are standardized identifiers for genes in the Ensembl database.
 3. **Median Tumor:** This column likely represents the median expression level of each gene in tumor samples. It's a numeric value representing the median expression level.
@@ -10,6 +10,22 @@ The Cancer Study Repository is a comprehensive collection of resources, datasets
 5. **Log2Fold Change:** This column typically represents the log2-fold change in gene expression between tumor and normal samples. It's a measure of how much the expression of a gene changes between the two conditions.
 6. **adjp:** This column likely contains adjusted p-values associated with each gene, often used in statistical analyses to determine if the observed differences in gene expression are statistically significant after adjusting for multiple testing.
 
+## Important Concepts for GEO2R Data 
+1. **ID:** This column contains unique identifiers for each gene or feature in the dataset. These identifiers are used to distinguish between different genes or features.
+
+2. **adjP-Val:** This column represents the adjusted p-value associated with each gene or feature. The adjusted p-value is a statistical measure that accounts for multiple testing and helps identify genes or features that are significantly differentially expressed between experimental conditions.
+
+3. **P-Value:** This column contains the unadjusted p-value associated with each gene or feature. The p-value indicates the probability of observing the data, or more extreme data, under the null hypothesis of no difference between groups. It is used to assess the statistical significance of the observed differences in gene expression.
+
+4. **t:** This column represents the t-statistic associated with each gene or feature. The t-statistic is a measure of the strength of evidence against the null hypothesis and is calculated based on the difference in means between groups and the standard error of the difference.
+
+5. **B:** This column contains the B-statistic associated with each gene or feature. The B-statistic is often used in linear models to assess the evidence for differential expression and is related to the log-odds of differential expression.
+
+6. **logFC:** This column represents the log2 fold change in expression between experimental conditions for each gene or feature. The logFC indicates the magnitude of change in gene expression and whether a gene is upregulated (positive logFC) or downregulated (negative logFC) in one condition compared to another.
+
+7. **GeneSymbol:** This column contains the official gene symbols or names associated with each gene or feature. Gene symbols are standardized identifiers assigned to genes by authoritative databases and are used to refer to specific genes across different studies and datasets.
+
+8. **GeneTitle:** This column provides descriptive titles or names associated with each gene or feature. Gene titles often provide additional context or information about the function, role, or biological significance of the gene. However, in some cases, this column may contain missing values (NA) if no descriptive title is available for a particular gene.
 
 ## Visualizations (What? Why? How?)
 ### MA Plot (M vs A Plot)
@@ -57,7 +73,7 @@ The Cancer Study Repository is a comprehensive collection of resources, datasets
   - Comparing with metadata: Check if clusters match known categories.
   - Experimenting: Explore different settings for optimal visualization.
 
-### Venn diagram
+### Venn Diagram
 - **What:** A Venn diagram is a visual representation that illustrates the relationships and commonalities between different sets or groups of items. It consists of overlapping circles or other shapes, with each circle representing a set and the overlapping areas representing the intersection of those sets.
 - **Why:** Use to explore and download the overlap in significant genes between multiple contrasts. The genes in each region on the Venn diagram can be downloaded by selecting the relevant contrasts.
 - **Interpretation:**
