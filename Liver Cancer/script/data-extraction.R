@@ -34,9 +34,9 @@ write.xlsx(under_expressed_genes, "Liver Cancer/table/under_expressed_genes_20")
 # join data
 LIHC_gene_data <- bind_rows(over_expressed_genes, under_expressed_genes)
 
-
+write.xlsx(LIHC_gene_data, "Liver Cancer/table/LIHC_gene_data")
 
 
 # Export data to Excel
-write.xlsx(gene_data, "exports/gene_data.xlsx")
+write.xlsx(gene_data, "exports/lgene_data.xlsx")
 
