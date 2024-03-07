@@ -1,4 +1,4 @@
-GeneSymbol      GeneID	MedianTumor	MedianNormal	Log2FoldChange adjp
+GeneSymbol	GeneID	MedianTumor	MedianNormal	Log2FoldChange adjp
 A2ML1	ENSG00000166535.19	6.499	490.173	-6.033	9.58e-68
 AADACP1	ENSG00000240602.7	2.265	0.080	1.596	1.65e-54
 AAED1	ENSG00000158122.11	7.210	2.675	1.160	1.23e-53
