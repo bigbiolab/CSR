@@ -21,7 +21,7 @@ write.xlsx(over_expressed_genes, "output/over_expressed_genes_top20.xlsx")
 
 # identify under-expressed significant genes
 under_expressed_genes <- genetable |>
-  filter(adjp < 0.05 & Log2FoldChange > 1) |>
+  filter(adjp < 0.05 & Log2FoldChange < -1) |>
   head(20)
 
 # export data to excel
